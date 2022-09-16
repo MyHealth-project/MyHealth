@@ -46,6 +46,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 100vw;
         min-height: 100vh;
         line-height: 1;
+        background-color: var(--principal-color-00);
     }
     ol, ul {
         list-style: none;

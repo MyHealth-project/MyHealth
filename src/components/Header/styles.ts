@@ -22,7 +22,7 @@ export const HeaderContent = styled(DefaultContent)`
     h1 {
         display: flex;
         justify-content: center;
-        position: fixed;
+        position: absolute;
         width: calc(100% - 30px);
         font-size: var(--font-size-logo);
         font-weight: bold;
