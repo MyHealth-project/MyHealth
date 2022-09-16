@@ -1,19 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-
-    --principal-color-01: #2A3249;
-    --principal-color-02: #2995B7;
-
-    --font-size-logo: 32px;
-
-    --font-size-mobile-title: 24px;
-    --font-size-mobile-text: 20px; 
-    --font-size-mobile-dropdown: 32px; 
-
-    --font-size-desktop-title: 36px; 
-    --font-size-desktop-text: 24px; 
-
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -34,12 +21,26 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 100%;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
+        color: white;
         vertical-align: baseline;
     }
-    /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {
         display: block;
+    }
+    :root {
+        --principal-color-00: #1E2333;
+        --principal-color-01: #2A3249;
+        --principal-color-02: #2995B7;
+
+        --font-size-logo: 28px;
+
+        --font-size-mobile-title: 20px;
+        --font-size-mobile-text: 16px; 
+        --font-size-mobile-dropdown: 28px; 
+
+        --font-size-desktop-title: 36px; 
+        --font-size-desktop-text: 24px; 
     }
     body {
         width: 100vw;
@@ -73,5 +74,5 @@ export const DefaultContainer = styled.div`
 export const DefaultContent = styled.div`
     display: flex;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
 `;
